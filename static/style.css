@@ -1,0 +1,14 @@
+textarea {
+    width:100%;
+    background-color:#C39BD3;
+    box-sizing:border-box;
+}
+
+input[type=submit] {
+    margin-top:10px;
+}
+
+.comment { /* 클래스 이름이 comment인 태그의 스타일 지정 */
+    border-top:dotted 1px #ddd;
+    font-size:0.7em;
+}
