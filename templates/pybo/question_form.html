@@ -28,7 +28,7 @@
         </div>
         <div class="form-group">
             <label for="image">이미지</label>
-            <textarea name="image" id="image" class="form-control" value="{{ form.content.value|default_if_none:'' }}"></textarea>
+            <input type="file" id="image" class="form-control", name="image">
         </div>
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>

@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import base_views, question_views, answer_views, comment_views, vote_views
+from .views import base_views, question_views, answer_views, comment_views, vote_views, captioning_views
 
 app_name = 'pybo'
 
@@ -30,4 +30,7 @@ urlpatterns = [
     # vote_views.py
     path('vote/question/<int:question_id>/', vote_views.vote_question, name='vote_question'),
     path('vote/answer/<int:answer_id>/', vote_views.vote_answer, name='vote_answer'),
+
+    # captioning_views.py
+    path('image_captioning/', captioning_views.image_captioning, name='image_captioning'),
 ]

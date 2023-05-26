@@ -118,6 +118,7 @@
     </ul>
     <!--페이징 처리 끝-->
     <a href="{% url 'pybo:question_create' %}" class="btn btn-primary">질문 등록하기</a> <!-- 'question_create(별칭)라는 이름으로 url만들어주세요'라는 뜻 -->
+    <a href="{% url 'pybo:image_create' %}">이미지 등록하기</a>
 </div>
 <form id="searchForm" method="get" action="{% url 'index' %}">
     <input type="hidden" id="kw" name="kw" value="{{ kw|default_if_none:'' }}">
