@@ -16,7 +16,7 @@ def question_create(request):
     """
     # print("here")
     if request.method == 'POST': # POST는 양식과 정보를 같이 담아서 옮긴다
-        form = QuestionForm(request.POST)
+        form = QuestionForm(request.POST, request.FILES)
         if form.is_valid(): # '폼이 유효하다면'
             question = form.save(commit=False)
             question.author = request.user

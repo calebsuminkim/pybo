@@ -73,6 +73,9 @@
                            class="small"><small>댓글 추가 ..</small></a>
                     </div>
                     <!-- 질문 댓글 End -->
+                    {% if question.image %}
+                    <img src="{{ question.image.url }}" alt="Question image">
+                    {% endif %}
                 </div>
             </div>
         </div>
